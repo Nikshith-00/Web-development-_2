@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stopwatch | Nikshith Jampala</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">NIKSHITH<span>.</span></div>
+    <div class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#stopwatch">Stopwatch</a>
+      <a href="#about">About</a>
+    </div>
+  </nav>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <p class="eyebrow">TASK 02 • WEB APPLICATION</p>
+        <h1>Time is yours.<br><span>Make every second count.</span></h1>
+        <p>
+          A responsive stopwatch web application built with HTML, CSS and
+          JavaScript. Start, pause, reset and record lap times accurately.
+        </p>
+        <a class="hero-button" href="#stopwatch">Open Stopwatch ↓</a>
+      </div>
+    </section>
+
+    <section class="stopwatch-section" id="stopwatch">
+      <div class="stopwatch-card">
+        <p class="eyebrow">STOPWATCH</p>
+        <h2>Precision <span>Timer</span></h2>
+
+        <div class="display" id="display">00:00:00.00</div>
+
+        <div class="controls">
+          <button class="btn start" id="startBtn">Start</button>
+          <button class="btn pause" id="pauseBtn">Pause</button>
+          <button class="btn lap" id="lapBtn">Lap</button>
+          <button class="btn reset" id="resetBtn">Reset</button>
+        </div>
+
+        <div class="status" id="status">Ready to start</div>
+
+        <div class="laps-area">
+          <div class="laps-heading">
+            <h3>Lap Times</h3>
+            <span id="lapCount">0 laps</span>
+          </div>
+          <ol id="lapsList"></ol>
+          <p class="empty" id="emptyLaps">Your lap times will appear here.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="about-inner">
+        <p class="eyebrow">ABOUT THIS PROJECT</p>
+        <h2>Built by <span>Nikshith Jampala</span></h2>
+        <p>
+          This Task 02 project demonstrates JavaScript timing, DOM manipulation,
+          event handling and responsive UI design. The stopwatch supports
+          start, pause, reset and lap functionality.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span>© 2026 Nikshith Jampala</span>
+    <a href="#home">Back to top ↑</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
